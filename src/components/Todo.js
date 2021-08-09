@@ -4,7 +4,8 @@ const ToDo = props => {
 return (
   <div
   onClick = {() => props.toggleTodo(props.toDo.id)}
-  //can add className to make it change colors when toggled
+  // add className to make it change colors when toggled
+  className={`toDo${props.toDo.completed ? 'completed' : ''}`}
   >
     <p>{props.toDo.task}</p>
 

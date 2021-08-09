@@ -9,9 +9,10 @@ const ToDoList = props => {
         <Todo key={toDo.id} toDo={toDo} toggleTodo={props.toggleTodo} />
 
       ))}
+        <button onClick={props.clearCompleted}>Clear Completed</button>
     </div>
-  )
-}
+  );
+};
 
 export default ToDoList;
 
