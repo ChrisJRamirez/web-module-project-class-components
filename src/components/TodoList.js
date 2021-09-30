@@ -6,10 +6,11 @@ const ToDoList = props => {
   return (
     <div className="toDoList">
       {props.toDoList.map(toDo => (
-        <ToDo key={toDo.id} toDo={toDo} togglePurchased={props.togglePurchased} />
+        <ToDo key={toDo.id} toDo={toDo} toggleTodo={props.toggleTodo} />
       ))}
       <button
         onClick={props.clearCompleted}Clear Completed>
+          Clear Completed
       </button>
     </div>
   )
